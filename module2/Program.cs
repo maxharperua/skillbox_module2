@@ -21,9 +21,9 @@ namespace module2
                               $"Баллы по физике - {scrorePhysix}");
             Console.ReadKey();
 
-            int ScoreSumm = scroreMath + scrorePhysix + scroreProgrammer;
-            string middleScore = string.Format("{0:f}", ScoreSumm / 3.0);
-            Console.WriteLine($"Сумма балов - {ScoreSumm} \nСрединй бал - {middleScore}");
+            int scoreSumm = scroreMath + scrorePhysix + scroreProgrammer;
+            string middleScore = string.Format("{0:f}", scoreSumm / 3.0);
+            Console.WriteLine($"Сумма балов - {scoreSumm} \nСрединй бал - {middleScore}");
             Console.ReadKey();
         }
     }
