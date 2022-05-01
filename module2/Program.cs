@@ -6,23 +6,24 @@ namespace module2
     {
         public static void Main(string[] args)
         {
-            string FullName = "Иванов Иван Ивановчич";
-            byte Age = 33;
-            string Email = "mail@mail.com";
-            byte ScroreProgrammer = 15;
-            byte ScroreMath = 10;
-            byte ScrorePhysix = 8;
+            string fullName = "Иванов Иван Ивановчич";
+            byte age = 33;
+            string email = "mail@mail.com";
+            byte scroreProgrammer = 15;
+            byte scroreMath = 11;
+            byte scrorePhysix = 8;
 
-            Console.WriteLine($"Ф.И.О. - {FullName} \n" +
-                              $"Возраст {Age} \n" +
-                              $"Email {Email} \n " +
-                              $"Баллы по программированию - {ScroreProgrammer} \n" +
-                              $"Баллы по математике - {ScroreMath} \n" +
-                              $"Баллы по физике - {ScrorePhysix}");
+            Console.WriteLine($"Ф.И.О. - {fullName} \n" +
+                              $"Возраст {age} \n" +
+                              $"Email {email} \n" +
+                              $"Баллы по программированию - {scroreProgrammer} \n" +
+                              $"Баллы по математике - {scroreMath} \n" +
+                              $"Баллы по физике - {scrorePhysix}");
             Console.ReadKey();
 
-            int ScoreSumm = ScroreMath + ScrorePhysix + ScroreProgrammer;
-            Console.WriteLine($"Сумма балов - {ScoreSumm} \nСрединй бал - {ScoreSumm / 3}");
+            int ScoreSumm = scroreMath + scrorePhysix + scroreProgrammer;
+            string middleScore = string.Format("{0:f}", ScoreSumm / 3.0);
+            Console.WriteLine($"Сумма балов - {ScoreSumm} \nСрединй бал - {middleScore}");
             Console.ReadKey();
         }
     }
